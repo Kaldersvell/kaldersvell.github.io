@@ -1,0 +1,16 @@
+h1 {
+    
+}
+body {
+    background-image: url(../img/Iceberg.jpg);
+    background-size: contain;
+}
+
+p {
+    color: orange;
+}
+#backimg {
+    background-image: url(../img/Iceberg.jpg);
+    
+    
+}
