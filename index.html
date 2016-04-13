@@ -1,86 +1,225 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Kaldersvell OS</title>
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/smoothscroll.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html" class="smoothScroll">Kaldersvell</a>
-    </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <!--<li><a href="#top" class="smoothScroll">Home</a></li>-->
-        <li><a href="#about" class="smoothScroll">About</a></li>
-        <li><a href="#download" class="smoothScroll">Download</a></li>
-        <li><a href="#wiki" class="smoothScroll">Wiki</a></li>
-        <li><a href="#contact" class="smoothScroll">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<div id="myScrollSpy">
-<body>
-<div id="top" style="background-color:#FFFFFF; text-align: center; color: white;">
-    <div class="jumbotron" style="height: 600; background-image: url(./img/Iceberg.jpg); background-size: cover; text-align: center; color: white;">
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Kaldersvell OS
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#design">Design</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+						
+						<br>
+						<img src="img/logo.png">
+						
+						<br>
+						<br>
+						<br>
+						<h1>Kaldersvell OS</h1>
+						<br>
+						<h3>Calm. Cool. For Makers. By Makers.</h3>
+						
+                        <a href="#about" class="btn btn-circle page-scroll" style="float: bottom">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="text-center full-height">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+        <div class="row container-fluid">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Kaldersvell OS</h2>
+                <p>Kaldersvell OS is an Operating System built on the Raspbian platform, designed and optomized for use with Internet of Things technology. Kaldersvell was created by high school students from the Middlesex County Academy for Science, Mathematics, and Engineering Technology in Edison, New Jersey.</p>
+            
+                <br>
+                <br>
+                
+                <div class="row">
+                
+                    <div class="col-md-6">
+                    
+                        <img src ="img/LED%20Diode-50.png">
+                        <br>
+                        <br>
+                        <h3>For the Beginner...</h3>
+                        <p>Kaldersvell is built to allow beginners to execute their code easily; our OS (which is fed through a web server created by the RasPi) comes with a development environment that allows for a beginner to set their script in action - just with the push of a button.</p>
+                    
+                    </div>
+                    
+                    <div class="col-md-6">
+                    
+                        <img src ="img/Server-50.png">
+                        <br>
+                        <br>
+                        <h3>For the Expert...</h3>
+                        <p>Kaldersvell is optimized to run even the most complicated scripts and modules with ease; our environment does not discriminate as to whether you wrote a script for a blinking LED or complex server-side methods for all of your IoT devices.</p>
+                    
+                    </div>
+            
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p style="font-size: 250%">Kaldersvell is versatile, welcoming, and crafted to fit the needs of the world's makers, new and old alike.</p>
+               
+            </div>
+        </div>
+    </section>
     
-    <h1>Kaldersvell OS</h1>
-        <img src="./img/Kaldersvell.png" height="150" width="150">
-    <h3> An operating system so cool that it's cold</h3>
-    
-    
-    </div>
-</div>
-<div id="about" style="background-color:black; text-align: center; text-color: white;">
-    <div class="jumbotron" style="background-color:#00dcFF; text-align: center; color: white;">
-    
-    <h1>About Us</h1>
-    
-    <h3> Kaldersvell OS is a Linux distribution founded on the principles of Open Source and all that is good in the world. We focus on providing a solid user experience for beginners and advanced users alike. Based off of Ubuntu and the GNOME 3 desktop, we are in the process of creating a Linux distro that we feel enhances a Linux user's experience. As if that isn't enough, Kaldersvell OS is free for all users! </h3>
-    
-    </div>
-</div>
-<div id="download" style="background-color:#FFFFFF; text-align: center; text-color: black;">
-    <div class="jumbotron" style="background-color:#FFFFFF; text-align: center; color: grey;">
-    
-    <h1>Download Kaldersvell OS <br></h1>
-    <p>
-    <button type="button" class="btn btn-default">
-    <span class="glyphicon glyphicon-download"></span> Download (64-Bit)
-    </button>
-    <br><br>Unfortunately, a release version is not available at the present time. One will be added as soon as possible.</p>
-    </div>
-    <br>
-<div id="wiki" style="background-color:black; text-align: center; text-color: white;">
-    <div class="jumbotron" style="background-color:#00dcFF; text-align: center; color: white;">
-    
-    <h1>Kaldersvell OS Wiki</h1>
-    
-    <h3> Coming Soon! </h3>
-    
-    
-    </div>
-</div>
-    <br>
-<div id="contact" style="background-color:#FFFFFF; text-align: center; text-color: gray;">
-    <div class="jumbotron" style="background-color:#FFFFFF; text-align: center; color: grey;">
-    
-    <h1>Have Questions? Want to help?</h1>
-    <a href="mailto:info@kaldersvell.com">
-    <button type="button" class="btn btn-default">
-    <span class="glyphicon glyphicon-envelope"></span> Contact Us
-    </button>
-    </a>
-    <p><br>We look forward to hearing your questions and comments!<p>
-    </div>
-</div>
+    <section id="design" class="text-center full-height">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                
+                <h2>Elegantly Designed</h2>
+                <p>Not only is Kaldersvell functionality-abundant, it's also intuitive; our UI is designed to fit user's understanding while also being aesthetically pleasing. Kaldersvell users come for the features, and stay for the appearance.</p>
+                
+                <img id="screen" src="img/Capture.JPG">
+                
+                
+            </div>
+        </div>
+    </section>
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center ">
+        <div class="download-section">
+            <div class="container container-fluid">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Kaldersvell.</h2>
+                    <p>You can download Kaldersvell for free on our GitHub page.</p>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center full-height">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Kaldersvell OS</h2>
+                <p>Feel free to email us to provide feedback, give us suggestions for new functionality, interest in documentation, or to just say hello!</p>
+                <p><a href="mailto:feedback@startbootstrap.com">info@kaldersvell.org</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kaldersvell" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; KaldersvellOS 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
-</div>
+
 </html>
