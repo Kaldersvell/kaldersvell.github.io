@@ -148,8 +148,8 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: linear-gradient(      
-      rgba(0, 0, 0, 0.625), 
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.625),
       rgba(0, 0, 0, 0.625)
     ), url(../img/wintermtn.jpeg)	 no-repeat bottom center scroll;
     background-color: #000;
@@ -200,7 +200,7 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-	
+
 }
 
 .btn-circle:hover,
@@ -228,7 +228,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -245,7 +245,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -271,8 +271,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background:linear-gradient(      
-      rgba(0, 0, 0, 0.625), 
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.625),
       rgba(0, 0, 0, 0.625)
     ), url(../img/wintermtn2.jpg) no-repeat center center scroll;
     background-color: #000;
@@ -286,8 +286,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background:linear-gradient(      
-      rgba(0, 0, 0, 0.625), 
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.625),
       rgba(0, 0, 0, 0.625)
     ), url(../img/wintermtn2.jpg) no-repeat center center scroll;
     background-color: #000;
@@ -396,17 +396,186 @@ body {
 }
 
 #screen{
-    
+
     text-align: center;
-    height: 85%;
-    width: 85%;
+    height: 115%;
+    width: 115%;
+    padding-right: 10%;
+    border-width: 5px;
+    border-color: black;
+}
+
+#logo-main{
+
+    height: 10%;
+    width: 10%;
+    padding-bottom: 1.75%
 }
 
 .full-height{
-    
+
     min-height: 100%;
 }
 .container-fluid{
-    
+
     min-height: 100%;
+}
+
+#onethird{
+
+    font-size: 26px;
+}
+
+#logo{
+
+    width: 25%;
+    height: 25%;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #9fe7ff;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-badge.primary {
+  background-color: #9fe7ff !important;
+}
+
+.timeline-badge.success {
+  background-color: #3f903f !important9fe7ff
+}
+
+.timeline-badge.warning {
+  background-color: #9fe7ff !important;
+}
+
+.timeline-badge.danger {
+  background-color: #9fe7ff !important;
+}
+
+.timeline-badge.info {
+  background-color: #9fe7ff !important;
+}
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
 }
